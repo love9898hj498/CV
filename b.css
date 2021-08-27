@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    min-height: 1000px;
+    margin: 50px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr ; /* 网格列. 的维度，去定义网格线的名称和网格轨道的尺寸大小。 左邊1 右邊2*/
+    box-shadow: 0 35px 55px rgba(0, 0, 0, .1);
+}
+
+.container .left_Side{
+    position: relative;
+    background: #003147;
+    padding: 40px;
+}
+.profileText{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+}
+.profileText .imgBx{
+    position: relative;
+    width: 180px;
+    height: 250px;
+    /* border-radius: 50%; */
+    overflow: hidden;
+}
+.profileText .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profileText h2{
+    color: #fff;
+    font-size: 1.5em;
+    margin: 20px 0 10px 0;
+    text-align: center;
+    font-weight: 600;
+}
+.profileText h2 span{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+.profileText i{
+    font-size: 20px;
+    color: #fff;
+    
+}
+.contactInfo{
+    padding-top:40px ;
+}
+.title{
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contactInfo ul{
+    position: relative;
+}
+.contactInfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.contactInfo ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+.contactInfo.education li{
+    margin-bottom: 15px;
+}
+.contactInfo.education h5{
+    color: #03a9f4;
+    font-weight: 500;
+}
+.contactInfo.education h4{
+    color: #fff;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+.container .right_Side{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+.about{
+    margin-bottom: 50px;
+}
+.about:last-child{
+    margin-bottom: 0;
+}
+.title2{
+    color: #003147;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-size: 26px;
+}
+p{
+    color: #333;
+}
+
+.about .box{
+    display: flex;
+    margin: 20px 0;
+}
+
+.about .box .year_company{
+    min-width: 150px;
+}
+.about .box .year_company h4{
+    color: #2a7da2;
+}
+.about .box .year_company h5{
+    color: #848c90;
+    font-weight: 600;
+}
+.about .box .text h4{
+    color: #2a7da2;
+    font-size: 16px;
+}
+
+.skills .skills-box{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-box {
+    
+    font-size: 22px;
+}
+.skills-box .box{
+    margin-right: 35px;
+}
+
+.skills-box .icon{
+    width: 25px;
+}
+
+.icon1{
+    color: rgb(222,75,37);
+}
+
+.icon2{
+    color: rgb(38,143,201);
+}
+
+.icon3{
+    color: rgb(239,217,23);
+}
+
+.icon4{
+    color: rgb(235,77,40);
+}
+
+
+
+.interest .box{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.interest h3{
+    color: #2a7da2;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.interest .imgbox{
+    width: 100%;
+}
+
+.interest .imgbox img{
+    width: 100%;
+}
+
+.interest a{
+    text-decoration: none;
+    color: #003147;
+    
+}
+
+.interest a:hover{
+    color: #03a9f4;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1000px){
+
+    .container{
+       margin: 10px;
+       grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .about .box{
+        flex-direction: column;
+    }
+    .about .box .year_company{
+        margin-bottom: 5px;
+        min-width: 150px;
+    }
+}
