@@ -110,12 +110,6 @@ body{
     font-weight: 400;
 }
 
-
-
-
-
-
-
 .container .right_Side{
     position: relative;
     background: #fff;
@@ -190,12 +184,25 @@ p{
     color: rgb(235,77,40);
 }
 
+.icon5{
+    color: rgb(138,18,252);
+}
 
+.icon6{
+    color: rgb(247,131,172);
+    display: inline-block;
+    padding-right: 35px;
+}
 
 .interest .box{
     display: flex;
     flex-direction: column;
-    
+}
+
+.interest > .box:nth-child(5),
+.interest > .box:nth-child(2){
+    border-bottom: 1px solid #000;
+    padding-bottom: 20px;
 }
 
 .interest h3{
@@ -212,16 +219,15 @@ p{
 }
 
 .interest a{
+    padding-top: 15px;
     text-decoration: none;
     color: #003147;
-    
 }
 
 .interest a:hover{
     color: #03a9f4;
     text-decoration: underline;
 }
-
 
 
 
